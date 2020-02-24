@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btnLoginSp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="510dp"
+        android:layout_height="43dp"
+        android:background="@drawable/button_border"
+        android:drawableTop="#000000"
+        android:text="@string/already_have_an_account_log_in"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
+        android:background="#3B3BFA"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnLoginSp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AccountType" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="175dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_signup_pic"
+        android:contentDescription="@string/todo" />
+
+    <RadioGroup
+        android:id="@+id/AccountType"
+        android:layout_width="341dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvsp1">
+
+        <RadioButton
+            android:id="@+id/rbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:buttonTint="@color/rbtn_color"
+            android:checked="false"
+            android:paddingLeft="10sp"
+            android:paddingTop="2sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="2sp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="#00FFFFFF"
+            android:text="Student"
+            android:textSize="24sp"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@+id/rbtn2"
+            android:layout_width="244dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="8dp"
+            android:buttonTint="@color/rbtn_color"
+            android:paddingLeft="10sp"
+            android:paddingTop="2sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="2sp"
+            android:text="Faculty"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvsp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginRight="235dp"
+        android:text="@string/sign_up_as"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btnLoginSp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="847dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_border"
+        android:drawableTop="#000000"
+        android:text="@string/already_have_an_account_log_in"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="341dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#3B3BFA"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnLoginSp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img1"
+        app:layout_constraintTop_toBottomOf="@+id/AccountType" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="175dp"
+        android:layout_height="172dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvsp1"
+        app:layout_constraintEnd_toStartOf="@+id/AccountType"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_signup_pic" />
+
+    <RadioGroup
+        android:id="@+id/AccountType"
+        android:layout_width="368dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbtn1"
+            android:layout_width="261dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:buttonTint="@color/rbtn_color"
+            android:checked="false"
+            android:paddingLeft="10sp"
+            android:paddingTop="5sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="5sp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="#00FFFFFF"
+            android:text="@string/business_account"
+            android:textSize="24sp"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@+id/rbtn2"
+            android:layout_width="261dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="8dp"
+            android:buttonTint="@color/rbtn_color"
+            android:paddingLeft="10sp"
+            android:paddingTop="5sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="5sp"
+            android:text="@string/customer"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvsp1"
+        android:layout_width="146dp"
+        android:layout_height="47dp"
+        android:text="@string/sign_up_as"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLoginSp"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1" />
+
+</android.support.constraint.ConstraintLayout>

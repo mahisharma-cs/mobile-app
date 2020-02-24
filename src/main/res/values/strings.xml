@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CMCI Notes</string>
+    <string name="sign_up_as">Sign up as</string>
+    <string name="already_have_an_account_log_in">Already have an Account? Log In.</string>
+    <string name="next">Next</string>
+    <string name="customer">Customer</string>
+    <string name="business_account">Business Account</string>
+    <string name="you_are_signing_as_customer">You are signing as customer.</string>
+    <string name="you_are_signing_as_business_account">You are signing as Business Account.</string>
+    <string name="indori_shop">Indori sHop</string>
+    <string name="log_in">Log In</string>
+    <string name="dont_have_an_account_sign_up">Don\'t have an account? Sign Up.</string>
+    <string name="todo">TODO</string>
+    <string name="forget_password">Forgot Password?</string>
+    <string name="password">Password</string>
+</resources>
